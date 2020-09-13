@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #3b8094;
+  .status-bar {
+    position: absolute;
+    background-color: #4aa3a3;
+    padding: 4px 4px 3px 3px;
+    border: 1px solid #1d2f2f;
+    box-shadow: 1px 1px 10px 2px #3a5f5f;
+    font-family: Russo One;
+    font-size: 15px;
+  }
+  .editor {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem 0;
+    textArea {
+      height: 15rem;
+      width: 80%;
+      resize: vertical;
+      outline: none;
+      padding-left: 5px;
+      padding-top: 35px;
+      font-size: 12px;
+      background-color: #c5dcdb;
+    }
+    .status-bar {
+      width: 80%;
+    }
+  }
+  .preview {
+    border: solid 1px darkslategray;
+    justify-content: center;
+    width: 96%;
+    align-self: center;
+    background-color: #c5dcdb;
+    margin-bottom: 15px;
+    .previewer {
+      min-height: 20rem;
+      height: auto;
+      margin-top: 35px;
+      padding: 5px 5px;
+    }
+    .status-bar {
+      width: 95%;
+    }
+  }
+}
